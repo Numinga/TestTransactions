@@ -24,12 +24,13 @@ public class LoadingActivity extends AppCompatActivity {
     private View mErrorScreen;
     private TextView mErrorText;
     private ImageView mReload;
+    protected int mTitleId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        toolbar.setTitle(R.string.transactions);
+        toolbar.setTitle(mTitleId);
         setSupportActionBar(toolbar);
 
         mLoadingScreen = findViewById(R.id.load);

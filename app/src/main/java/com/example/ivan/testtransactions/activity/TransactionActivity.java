@@ -33,6 +33,7 @@ public class TransactionActivity extends LoadingActivity implements LoadingActiv
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_transaction);
+        mTitleId = R.string.transaction_details;
         super.onCreate(savedInstanceState);
         mId = getIntent().getIntExtra(KEY_ID, 0);
         mPriceNumber = getIntent().getIntExtra(KEY_PRICE, 0);

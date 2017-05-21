@@ -41,6 +41,7 @@ public class TransactionsListActivity extends LoadingActivity implements Loading
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         setContentView(R.layout.activity_transactions_list);
+        mTitleId = R.string.transactions;
         super.onCreate(savedInstanceState);
 
         mLayoutManager = new LinearLayoutManager(this);
